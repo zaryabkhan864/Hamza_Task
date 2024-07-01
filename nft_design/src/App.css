@@ -1,0 +1,562 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.btn-primary-purple{
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+  color:#fff;
+  border-radius: 7px;
+}
+.btn-primary-purple:hover{
+  background: linear-gradient(104.42deg, #5f5ec2 0%, #3f3cc7 60.23%);
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+  color:#fff;
+}
+.btn-primary-purple-outline{
+  color: #7780A1;
+  border-color: #7780A1;
+  border-radius: 7px;
+}
+.btn-primary-purple-outline:hover{
+  background: linear-gradient(104.42deg, #5f5ec2 0%, #3f3cc7 60.23%);
+  box-shadow: inset -4px -4px 4px rgba(0, 0, 0, 0.1), inset 4px 4px 4px rgba(255, 255, 255, 0.1);
+  color:#fff;
+}
+
+/* header css */
+.header-bg {
+  background-image: url("../public/assets/images/Circles.png");
+  background-color: #cccccc;
+ }
+ .header-square {
+  background-image: url("../public/assets/images/Squares.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+ }
+.header-top-heading{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7780A1;
+
+/* On White/Grey 100 */
+color: #7780A1;
+
+
+}
+.header-background{
+    background-image: url("../public/assets/images/Squares.png");
+    height: 100px;
+    /* background-color: #cccccc; */
+
+}
+
+
+
+/* slick slider */
+#carosle .slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+#carosle .slide {
+  transform: scale(1);
+  transition: transform 300ms;
+  opacity: 1.5;
+  padding: 22%;
+}
+
+#carosle .activeSlide {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+#carosle .arrow {
+  /* background: url('../public/assets/images/right.png') no-repeat 50%; */
+
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#carosle .arrow svg {
+  transition: color 300ms;
+}
+
+#carosle .arrow svg:hover {
+  color: #68edff;
+}
+
+#carosle .next {
+  right: 10%;
+  top: 47%;
+}
+
+#carosle .prev {
+  left: 10%;
+  top: 47%;
+}
+
+/* cards css */
+.cards-heading{
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0.2px;
+}
+.cards-blue-square{
+  background: rgba(42, 39, 201, 0.1);
+  color: #2A27C9 ;
+}
+.cards-last-line{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+}
+.card-hr{
+  border: 1px solid #E2E2ED;
+}
+/* small carosle */
+
+#small-carsole .slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+#small-carsole .slide {
+  transform: scale(1);
+  transition: transform 300ms;
+  opacity: 1.5;
+  padding: 22%;
+}
+
+/* #small-carsole .activeSlide {
+  transform: scale(1.5);
+  opacity: 1;
+} */
+
+#small-carsole .arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#small-carsole .arrow svg {
+  transition: color 300ms;
+}
+
+#small-carsole .arrow svg:hover {
+  color: #68edff;
+}
+
+#small-carsole .next {
+  right: 0%;
+  top: 50%;
+}
+
+#small-carsole .prev {
+  left: 0%;
+  top: 50%;
+}
+
+
+/* counter */
+
+.counter-heading{
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+font-weight: 600;
+font-size: 48px;
+
+}
+
+
+
+
+/* footer */
+
+.footer-medium-text{
+ 
+  font-family: 'Sora', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+
+}
+.footer-right-text{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+
+/* or 24px */
+letter-spacing: 0.2px;
+
+/* On White/Grey 100 */
+color: #7780A1;
+}
+
+.footer-border-left{
+  border-radius: 10px 0px 0px 10px;
+}
+.footer-border-right{
+  border-radius: 0px 10px 10px 0px;
+}
+.footer-leftcol-text{
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+line-height: 20px;
+
+  color: #2A27C9;
+
+}
+/* three cards */
+.middle-card{
+  border-radius: 0px 10px 10px 10px;
+}
+.darkbg{
+  background-color: #1c1d29;
+}
+
+
+.three-card-top-heading{
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+display: flex;
+align-items: center;
+letter-spacing: 0.2px;
+}
+
+/* #three .slide img {
+  width: 20rem;
+  margin: 0 auto;
+} */
+
+/* #three .slide {
+  transform: scale(1);
+  transition: transform 300ms;
+  opacity: 1.5;
+  padding: 22%;
+} */
+
+/* #three .activeSlide {
+  transform: scale(1.5);
+  opacity: 1;
+} */
+
+#three .arrow {
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#three .arrow svg {
+  transition: color 300ms;
+}
+
+#three .arrow svg:hover {
+  color: #68edff;
+}
+
+#three .next {
+  right: 22%;
+  top: 20%;
+}
+
+/* #three .prev {
+  left: 10%;
+  top: 47%;
+} */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .paint-left-smallheading{
+    font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+  .paint-left-heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 93%;
+    letter-spacing: 0.2px;
+  }
+  .paint-left-subheading{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  letter-spacing: 0.2px;
+  
+  /* On White/Grey 100 */
+  color: #7780A1;
+  }
+  .header-heading{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 100%;
+  }
+  .header-padding{
+    padding-bottom: 18.25rem;
+    /* paddingBottom: '18.25' + 'rem' }} */
+  }
+  
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .paint-left-smallheading{
+    font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+  .paint-left-heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  /* or 64px */
+  letter-spacing: 0.2px;
+  }
+  .paint-left-subheading{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  letter-spacing: 0.2px;
+  
+  /* On White/Grey 100 */
+  color: #7780A1;
+  }
+  .header-heading{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 100%;
+  }
+  .header-padding{
+    padding-bottom: 18.25rem;
+    /* paddingBottom: '18.25' + 'rem' }} */
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .paint-left-smallheading{
+    font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+  .paint-left-heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  /* or 64px */
+  letter-spacing: 0.2px;
+  }
+  .paint-left-subheading{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  letter-spacing: 0.2px;
+  
+  /* On White/Grey 100 */
+  color: #7780A1;
+  }
+  .header-heading{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 100%;
+  }
+  .header-padding{
+    padding-bottom: 6.25rem;
+    /* paddingBottom: '18.25' + 'rem' }} */
+  }
+  
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .paint-left-smallheading{
+    font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+  .paint-left-heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  /* or 64px */
+  letter-spacing: 0.2px;
+  }
+  .paint-left-subheading{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  letter-spacing: 0.2px;
+  
+  /* On White/Grey 100 */
+  color: #7780A1;
+  }
+  .header-heading{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 100%;
+  }
+  .header-padding{
+    padding-bottom: 9.25rem;
+   
+  }
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .paint-left-smallheading{
+    font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  }
+  .paint-left-heading{
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+  /* or 64px */
+  letter-spacing: 0.2px;
+  }
+  .paint-left-subheading{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  /* or 24px */
+  letter-spacing: 0.2px;
+  
+  /* On White/Grey 100 */
+  color: #7780A1;
+  }
+  .header-heading{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100%;
+  }
+  .header-padding{
+    padding-bottom: 13.25rem;
+    /* paddingBottom: '18.25' + 'rem' }} */
+  }
+  
+}
